@@ -1,0 +1,427 @@
+/* FORM INPUT */
+
+.nama {
+    color: #464646;
+}
+.field {
+    height: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+}
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: #ccc;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.field input::placeholder {
+    color: #ccc;
+}
+.field input:focus {
+    padding-left: 47px;
+    border: 2px solid #007bff;
+}
+.field input:focus ~ i {
+    color: #007bff;
+}
+
+/* END FORM INPUT */
+
+/* ------------------------------- */
+
+/* FILE PDF */
+
+.js .input-file-trigger-smv,
+.js .input-file-trigger-ppm,
+.js .input-file-trigger-work,
+.js .input-file-trigger-trimcard,
+.js .input-file-trigger-techspech {
+    display: block;
+    padding: 14px 14px;
+    background: #17a2b8;
+    color: #fff;
+    font-size: 12px;
+    transition: all 0.4s;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+}
+.js .input-file-smv,
+.js .input-file-ppm,
+.js .input-file-work,
+.js .input-file-trimcard,
+.js .input-file-techspech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+.js .input-file-smv:hover + .input-file-trigger-smv,
+.js .input-file-smv:focus + .input-file-trigger-smv,
+.js .input-file-trigger-smv:hover,
+.js .input-file-trigger-smv:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-ppm:hover + .input-file-trigger-ppm,
+.js .input-file-ppm:focus + .input-file-trigger-ppm,
+.js .input-file-trigger-ppm:hover,
+.js .input-file-trigger-ppm:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-work:hover + .input-file-trigger-work,
+.js .input-file-work:focus + .input-file-trigger-work,
+.js .input-file-trigger-work:hover,
+.js .input-file-trigger-work:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-trimcard:hover + .input-file-trigger-trimcard,
+.js .input-file-trimcard:focus + .input-file-trigger-trimcard,
+.js .input-file-trigger-trimcard:hover,
+.js .input-file-trigger-trimcard:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-techspech:hover + .input-file-trigger-techspech,
+.js .input-file-techspech:focus + .input-file-trigger-techspech,
+.js .input-file-trigger-techspech:hover,
+.js .input-file-trigger-techspech:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.file-return-smv,
+.file-return-ppm,
+.file-return-work,
+.file-return-trimcard,
+.file-return-techspech {
+    margin: 0;
+}
+.file-return-smv:not(:empty),
+.file-return-ppm:not(:empty),
+.file-return-work:not(:empty),
+.file-return-trimcard:not(:empty),
+.file-return-techspech:not(:empty) {
+    margin: 1em 0;
+}
+.js .file-return-smv,
+.js .file-return-ppm,
+.js .file-return-work,
+.js .file-return-trimcard,
+.js .file-return-techspech {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+.js .file-return-smv:not(:empty):before,
+.js .file-return-ppm:not(:empty):before,
+.js .file-return-work:not(:empty):before,
+.js .file-return-trimcard:not(:empty):before,
+.js .file-return-techspech:not(:empty):before {
+    content: "";
+    font-style: normal;
+    font-weight: normal;
+}
+
+h5 {
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+/* ------------------------------- */
+
+
+/* ------------------------------- */
+
+.js .input-file-trigger-smv1,
+.js .input-file-trigger-ppm1,
+.js .input-file-trigger-work1,
+.js .input-file-trigger-trimcard1,
+.js .input-file-trigger-techspech1 {
+    display: block;
+    padding: 14px 14px;
+    background: #17a2b8;
+    color: #fff;
+    font-size: 12px;
+    transition: all 0.4s;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+}
+.js .input-file-smv1,
+.js .input-file-ppm1,
+.js .input-file-work1,
+.js .input-file-trimcard1,
+.js .input-file-techspech1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+.js .input-file-smv1:hover + .input-file-trigger-smv1,
+.js .input-file-smv1:focus + .input-file-trigger-smv1,
+.js .input-file-trigger-smv1:hover,
+.js .input-file-trigger-smv1:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-ppm1:hover + .input-file-trigger-ppm1,
+.js .input-file-ppm1:focus + .input-file-trigger-ppm1,
+.js .input-file-trigger-ppm1:hover,
+.js .input-file-trigger-ppm1:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-work1:hover + .input-file-trigger-work1,
+.js .input-file-work1:focus + .input-file-trigger-work1,
+.js .input-file-trigger-work1:hover,
+.js .input-file-trigger-work1:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-trimcard1:hover + .input-file-trigger-trimcard1,
+.js .input-file-trimcard1:focus + .input-file-trigger-trimcard1,
+.js .input-file-trigger-trimcard1:hover,
+.js .input-file-trigger-trimcard1:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.js .input-file-techspech1:hover + .input-file-trigger-techspech1,
+.js .input-file-techspech1:focus + .input-file-trigger-techspech1,
+.js .input-file-trigger-techspech1:hover,
+.js .input-file-trigger-techspech1:focus {
+    background: #007bff;
+    color: #fff;
+}
+
+.file-return-smv1,
+.file-return-ppm1,
+.file-return-work1,
+.file-return-trimcard1,
+.file-return-techspech1 {
+    margin: 0;
+}
+.file-return-smv1:not(:empty),
+.file-return-ppm1:not(:empty),
+.file-return-work1:not(:empty),
+.file-return-trimcard1:not(:empty),
+.file-return-techspech1:not(:empty) {
+    margin: 1em 0;
+}
+.js .file-return-smv1,
+.js .file-return-ppm1,
+.js .file-return-work1,
+.js .file-return-trimcard1,
+.js .file-return-techspech1 {
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+.js .file-return-smv1:not(:empty):before,
+.js .file-return-ppm1:not(:empty):before,
+.js .file-return-work1:not(:empty):before,
+.js .file-return-trimcard1:not(:empty):before,
+.js .file-return-techspech1:not(:empty):before {
+    content: "";
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* End FILE PDF */
+
+/* =============================== */
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 400;
+  }
+
+.custom-file-labels {
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    overflow: hidden;
+    text-shadow: none;
+    line-height: 1.5;
+    color: #a3a3a3;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    box-shadow: none;
+  }
+  
+  .custom-file-labels::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 2.25rem;
+    padding: 0.375rem 1rem;
+    line-height: 1.5;
+    color: #fff;
+    content: "Browse";
+    background-color: #55beff;
+    border-left: inherit;
+    border-radius: 20px;
+  }
+
+/* ------------------------------- */
+
+/* IMAGE */
+.file-upload {
+    width: 280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #17a2b8;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.file-upload-btn:hover {
+    background: #007bff;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 10px;
+    border: 4px solid #17a2b8;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #86c1ff;
+    border: 4px solid #007bff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #17a2b8;
+    padding: 60px 0;
+}
+
+.file-upload-image {
+    max-height: 150px;
+    max-width: 150px;
+    margin: auto;
+    padding: 20px;
+}
+
+.remove-image {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #ff5441;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.remove-image:hover {
+    background: #cc3d2a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+/* IMAGE */
+
+/* ------------------------------------ */

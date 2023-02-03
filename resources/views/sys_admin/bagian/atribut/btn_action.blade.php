@@ -1,0 +1,2 @@
+<a href="{{route('bagian.edit', $row['id'])}}" class="edit btn btn-primary btn-sm" title="Edit"><i class="fas fa-edit"></i></a>
+<a href="{{route('bagian.delete', $row['id'])}}" class="edit btn btn-danger btn-sm" title="Delete"><i class="fas fa-trash"></i></a>

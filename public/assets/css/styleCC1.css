@@ -1,0 +1,318 @@
+/* NAVBAR */
+
+.icon-back {
+  position: relative;
+  left: 14px;
+  top: 1px
+  /* margin-right: -15px;
+  margin-top: 10px;
+  padding-left: 15px */
+}
+
+.btn-prev {
+  text-decoration: none;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  margin: 7px 10px;
+}
+
+.nav-link .icon-user{
+  position: relative;
+  top: -4px;
+  background: #007BFF;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px 8px;
+  /* margin-right: 7px; */
+  box-shadow: -2px -2px 3px #2d93ff,
+              2px 2px 5px #006bdd;
+}
+
+
+
+.login-username .nama-user-auth {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.login-username .nama-jabatan-auth {
+  position: relative;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 660px) {
+
+  .d-sm-inline-block {
+      display: none;
+  }
+    .login-username {
+      font-size: 14px;
+  }
+  .login-username .nama-user-auth {
+      position: relative;
+      display: flex;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+  }
+  .login-username .nama-jabatan-auth {
+      position: relative;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+  }
+}
+
+
+/* NAVBAR */
+
+
+/* Button Hover Shadow*/
+
+.btn_hover {
+display: inline-block;
+padding: 7px;
+border-radius: 10px;
+font-size: 13px;
+text-transform: uppercase;
+text-align: center;
+/* background-color: #007BFF; */
+border: 1px solid transparent;
+color: #fff;
+transition: all 0.3s ease 0s;
+}
+
+.btn_hover:hover {
+color: #fff;
+-webkit-box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.7);
+-moz-box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.7);
+box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.7);
+color: #fff;
+transform: translateY(-4px);
+}
+
+/* End Button Hover */
+
+.cards {
+margin-bottom: 30px;
+border: 0px;
+border-radius: 8px;
+box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+.cards-title {
+font-size: 20px;
+font-weight: 500;
+text-align: center;
+padding-top: 5px;
+}
+
+#Cardheader {
+border-top-right-radius: 8px 8px;
+border-top-left-radius: 8px 8px;
+
+}
+
+.card-footer{
+border-bottom-right-radius: 8px 8px;
+border-bottom-left-radius: 8px 8px;
+}
+
+.Issues, .Angka {
+width: 100%;
+height: auto;
+color: #ffffff;
+}
+
+.Issues2 {
+width: 100%;
+height: auto;
+color: #2b2b2b;
+font-size: 20px;
+font-weight: 600;
+}
+
+.Angka2 {
+width: 100%;
+height: auto;
+color: #2b2b2b;
+font-size: 50px;
+font-weight: 600;
+top: -30px;
+z-index: 99;
+}
+
+
+/* .Angka {
+border-bottom: 2px solid #818181;
+} */
+
+div .container-critical, .container-poor, .container-good {
+padding-top: 17px;
+} 
+
+div .container-issue {
+padding-top: 30px;
+padding-right: 10px;
+}
+
+#labelC {
+position: relative;
+font-size: 12pt;
+font-weight: bold;
+top: -68px;
+z-index: 99;
+color: #ff0000;
+}
+
+#labelP {
+position: relative;
+font-size: 12pt;
+font-weight: bold;
+top: -68px;
+z-index: 99;
+color: #F7C600;
+/* color: #F4DA00; */
+
+}
+
+#labelG {
+position: relative;
+font-size: 12pt;
+font-weight: bold;
+top: -68px;
+z-index: 99;
+color: #228B22
+}
+
+#labelC1 {
+position: relative;
+font-size: 12pt;
+font-weight: bold;
+top: -68px;
+z-index: 99;
+color: #ff0000;
+}
+
+#labelG1 {
+position: relative;
+font-size: 12pt;
+font-weight: bold;
+top: -68px;
+z-index: 99;
+color: #1ea31e
+}
+
+.bg-card {
+  background: #fcfcfc;
+}
+
+.bg-overall {
+background: #0055af;
+}
+
+.bg-alus {
+background: #0055af;
+}
+
+.bg-lines {
+background: #111111;
+}
+
+.judul {
+color: #ffffff;
+font-size: 16px;
+
+}
+
+.border-top-alus {
+border-top:.25rem solid #018ea7!important;
+border-bottom:.25rem solid #018ea7!important
+}
+
+.cards .cards-body {
+padding: 1.88rem 1.81rem; 
+}
+
+.gradient-w {
+background-image: linear-gradient(180deg, #ffffff, #e9e9e9); }
+
+.gradient-1 {
+background-image: linear-gradient(220deg, #034355, #04a9d6); }
+
+.gradient-2, .dropdown-mega-menu .ext-link.link-3 a {
+background-image: linear-gradient(220deg, #062c50, #0f7adf); }
+
+.gradient-3, .dropdown-mega-menu .ext-link.link-2 a, .header-right .icons .user-img .activity {
+background-image: linear-gradient(230deg, #ffc480, #ff763b); }
+
+
+.gradient-5 {
+background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); }
+
+.gradient-6 {
+background-image: linear-gradient(135deg, #97ABFF 10%, #123597 100%); }
+
+.gradient-7 {
+background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%); }
+
+.gradient-8 {
+background-image: linear-gradient(135deg, #EE9AE5 10%, #5961F9 100%); }
+
+.gradient-anchor, .gradient-9 {
+background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); }
+
+/* .overall {
+background-image: linear-gradient(180deg, #ffffff 10%, #dbba00 150%);
+} */
+
+.right {
+border-left: 1px solid #afafaf;
+text-align: left;
+color: #646464;
+font-size: 16px;
+font-weight: 600;
+z-index: 99;
+bottom: 15px;
+}
+
+.left {
+border-right: 1px solid #afafaf;
+text-align: right;
+color: #646464;
+font-size: 16px;
+font-weight: 600;
+z-index: 99;
+bottom: 15px;
+}
+
+.right-overall {
+border-left: 1px solid #afafaf;
+text-align: left;
+color: #646464;
+font-size: 16px;
+font-weight: 600;
+}
+
+.left-overall {
+border-right: 1px solid #afafaf;
+text-align: right;
+color: #646464;
+font-size: 16px;
+font-weight: 600;
+}
+
+.card-judul {
+color: #646464;
+font-size: 16px;
+font-weight: 600;
+z-index: 99;
+top: 20px;
+}
+

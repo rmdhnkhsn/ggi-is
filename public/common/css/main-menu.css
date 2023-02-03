@@ -1,0 +1,155 @@
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: -8px;
+    color: #000000;
+}
+
+.main-col-3 {
+    position: relative;
+    width: 100%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.bg-main {
+    background: #fff;
+    color: #007BFF;
+}
+
+.bg-main:hover {
+    color: #fff;
+}
+
+.pd-main {
+    padding: 30px;
+}
+
+.h-240 {
+    height: 240px;
+}
+
+.main-icon {
+    font-size: 60px;
+}
+
+.main-svg {
+    display: none;
+}
+
+.main-svg:hover {
+    opacity: 1;
+}
+
+.main-svg2 {
+    opacity: 1;
+}
+
+.main-svg2:hover {
+    display: none;
+}
+
+.img-gistube {
+    width: 30px;
+    height: 30px;
+    background-image: url('/public/images/iconpack/Gistube2.svg')
+}
+
+.main-icon-dot {
+    position: relative;
+    top: -3px;
+    padding: 0 10px;
+    font-size: 5px;
+}
+
+.main-name {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.main-desc {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.main-cards {
+    position: relative;
+    margin-bottom: 18px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    overflow: hidden;
+}
+
+
+.main-cards::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    filter: blur(40px);
+    border-radius: 50%;
+    background: #0073EE;
+    transition: width .7s, height .7s;
+}
+
+.main-cards:hover::before {
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1070px) {
+    .main-col-3 {
+        position: relative;
+        width: 100%;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        -webkit-flex: 0 0 33.333333%;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .main-col-3 {
+        position: relative;
+        width: 100%;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-col-3 {
+        position: relative;
+        width: 100%;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

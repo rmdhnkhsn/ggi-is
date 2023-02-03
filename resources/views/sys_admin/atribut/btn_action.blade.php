@@ -1,0 +1,1 @@
+<a href="{{route('karyawan.editrole', $row['nik'])}}" class="edit btn btn-primary btn-sm" title="Edit Role"><i class="fas fa-edit"></i></a>

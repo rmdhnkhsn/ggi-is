@@ -1,0 +1,133 @@
+/* Menu Bar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-bar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation2 {
+    position: relative;
+    width: 600px;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px #dddddd;
+}
+.navigation2 ul {
+    display: flex;
+    width: 500px;
+}
+.navigation2 ul li {
+    position: relative;
+    list-style: none;
+    width: 300px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation2 ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -8px;
+}
+.navigation2 ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 58px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #888;
+}
+.navigation2 ul li.active a .icon {
+    transform: translateY(-28px);
+    color: #fff;
+}
+.navigation2 ul li a .text {
+    font-family: "poppins", sans-serif;
+    position: absolute;
+    color: var(--clr);
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-top: 17px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(30px);
+    color: #666;
+}
+.navigation2 ul li.active a .text {
+    opacity: 1;
+    transform: translateY(25px);
+    font-size: 0.87em;
+}
+.indicator2 {
+    position: absolute;
+    top: -43%;
+    margin-left: 2px;
+    width: 70px;
+    height: 70px;
+    /* background: linear-gradient(30deg, #359aff, #007BFF); */
+    /* background-image: linear-gradient(30deg, #a1d0ff 0%, #359aff 100%); */
+    background: #66b3ff;
+    border-radius: 50%;
+    border: 6px solid #f4f6f9;
+    transition: 0.5s;
+}
+.indicator2:before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 #f4f6f9;
+}
+.indicator2:after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 #f4f6f9;
+}
+
+.navigation2 ul li:nth-child(1).active ~ .indicator2 {
+    transform: translateX(calc(47px * 1));
+}
+.navigation2 ul li:nth-child(2).active ~ .indicator2 {
+    transform: translateX(calc(107px * 2));
+}
+.navigation2 ul li:nth-child(3).active ~ .indicator2 {
+    transform: translateX(calc(127px * 3));
+}
+
+/* Menu Bar */
+
+.card-judul {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+.card-date {
+    font-size: 16px;
+    color: #555;
+}

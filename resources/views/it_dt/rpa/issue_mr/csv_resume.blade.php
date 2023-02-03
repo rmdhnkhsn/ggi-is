@@ -1,0 +1,104 @@
+@extends("layouts.app")
+@section("title","CSV")
+@push("styles")
+<link rel="stylesheet" href="{{asset('/common/css/style-dashboard.css')}}">
+<link rel="stylesheet" href="{{asset('/common/sass/dashboard.css')}}">
+<link rel="stylesheet" href="{{asset('/common/css/data-tables/data-tables-sample2.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/select2/css/select2Grey.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+<link rel="stylesheet" href="{{asset('/common/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+@endpush
+
+@push("sidebar")
+@endpush
+
+@section("content")
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="cards p-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title-18">Test</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table id="IssueMR" class="table tbl-content no-wrap">
+                                <thead>
+                                    <tr class="bg-thead">
+                                        <th>Item Number</th>
+                                        <th>Item Name</th>
+                                        <th>Description 2</th>
+                                        <th>Style</th>
+                                        <th>PO Number</th>
+                                        <th>Location</th>
+                                        <th>Total Qty Issue</th>
+                                        <th>UOM</th>
+                                        <th>No Kontrak</th>
+                                        <th>Placing</th>
+                                        <th>No BPB</th>
+                                        <th>Delivery</th>
+                                        <th>Balance</th>
+                                        <th>WO</th>
+                                        <th>Qty WO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($data['data_issue'] as $k => $v)
+                                    <tr>
+                                        <td>{{$v['item_number']}}</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>{{$v['location']}}</td>
+                                        <td>{{$v['qty_issued']}}</td>
+                                        <td>{{$v['uom_issued']}}</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>{{$v['wo']}}</td>
+                                        <td>{{$v['qty_need']}}</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ @endsection
+
+@push("scripts")
+<!-- <script src="{{asset('common/js/export_btn/buttons.js')}}"></script> -->
+<script src="{{asset('common/js/swal/sweetalert.min.js')}}"></script>
+
+<!-- Data table Atas  -->
+<script>
+  $(document).ready( function () {
+
+    var table = $('#IssueMR').DataTable({
+        "pageLength": 100,
+        dom: 'Bfrtp',
+        "buttons": [ {extend: 'excel', title: ''}, "pdf",
+        {
+            extend: 'pdfHtml5',
+            orientation: 'landscape',
+            text: 'PDF',
+            download: 'open'
+        } ],
+    });
+  });
+</script>
+
+@endpush

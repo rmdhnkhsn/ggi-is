@@ -1,0 +1,357 @@
+.maps {
+	background: linear-gradient(180deg, #23334D 0%, #465970 100%);
+}
+
+.animation {
+	animation: apar .5s linear infinite;
+	filter:
+		drop-shadow(0 0 5px rgb(0, 0, 0)) drop-shadow(0 5px 10px rgb(229, 255, 0)) drop-shadow(0 5px 20px rgb(65, 154, 255));
+}
+
+
+@keyframes apar {
+	0% {
+		opacity: .1;
+	}
+
+	25% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: .75;
+		fill: #fff;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.magnify {
+	z-index: 20;
+	position: relative;
+	margin: 0px auto;
+	overflow: auto;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.element_to_magnify {
+	position: relative;
+	top: 0;
+	bottom: 0;
+}
+
+.element_to_magnify a {
+	display: block;
+	position: absolute;
+	top: 80px;
+	right: 80px;
+	background-color: rgba(200, 200, 200, .25);
+	padding: 4px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.element_to_magnify img {
+	width: 100%;
+	height: auto;
+}
+
+.magnified_element {
+	position: absolute;
+	top: 0;
+}
+
+.magnify_glass {
+	z-index: 300;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	cursor: move;
+}
+
+.sniper img {
+	width: 100%;
+}
+
+.mg_ring {
+	pointer-events: none;
+	background: none;
+	position: absolute;
+	-moz-box-shadow: inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	-ms-box-shadow: inset 0 0 10px #000000;
+	box-shadow: inset 0 0 10px #000000;
+	border: 2px solid rgb(0, 89, 255);
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+
+}
+
+.mg_zone {
+	position: absolute;
+	border-radius: 50%;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.pm_btn {
+	border: 4px solid #CCC;
+	z-index: 30;
+	color: #333;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+
+}
+
+.pm_btn h2 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.minus {
+	right: -24px;
+	bottom: 30px;
+}
+
+.plus {
+	right: 0px;
+	bottom: -5px;
+}
+
+.button {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	overflow: hidden;
+	border-radius: 50%;
+	background-color: rgba(50, 50, 50, .5);
+	position: absolute;
+	text-indent: -999em;
+	border: solid black 1px;
+}
+
+svg {
+	fill: #46597044;
+
+}
+
+
+.floating-legend {
+	width: 404px;
+	height: 450px;
+	background: #007BFF;
+	border-radius: 16px;
+	position: fixed;
+	bottom: 21%;
+	right: 2%;
+	z-index: 2000;
+}
+
+.floating-legend::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 100%;
+	right: 20px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+	display: block;
+}
+
+.floating-legend .floating-header {
+	padding: 24px 0 0 24px;
+	box-sizing: border-box;
+}
+
+.floating-legend .floating-header .float-judul,
+.floating-legend .floating-header h2 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+.floating-legend .floating-header p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #E8E8E8;
+}
+
+.floating-legend .floating-header .sub-title {
+	margin-top: -8px;
+}
+
+.floating-legend .floating-header .sub-judul {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #E8E8E8;
+}
+
+.floating-content {
+	width: 404px;
+	height: 350px;
+	background: #FFFFFF;
+	border-radius: 16px;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	padding: 24px 0;
+}
+
+@media screen and (max-width: 418px) {
+
+	.floating-legend,
+	.floating-content {
+		width: 360px;
+	}
+}
+
+@media screen and (max-width: 373px) {
+
+	.floating-legend,
+	.floating-content {
+		width: 338px;
+	}
+}
+
+.body-content {
+	width: 100%;
+	padding: 0 22px;
+}
+
+.item {
+	width: 356px;
+	height: 45px;
+	background: #FFFFFF;
+	border: 1px solid #007BFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.item .icon {
+	padding: 10px;
+	box-sizing: border-box;
+	/* background-color: #007BFF; */
+	position: relative;
+}
+
+.item p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #007BFF;
+	margin: auto 0 auto 24px;
+}
+
+.legendButton {
+	width: 52px;
+	height: 52px;
+	background: #007BFF;
+	border-radius: 50%;
+	border: none;
+	position: fixed;
+	bottom: 11.5%;
+	right: 2.5%;
+	z-index: 1039;
+}
+
+.legend-button {
+	width: 60px;
+	height: 60px;
+	background: #007BFF;
+	border-radius: 50%;
+	border: none;
+	position: fixed;
+	bottom: 10%;
+	right: 2%;
+	z-index: 1039;
+}
+
+.legend-button2 {
+	width: 60px;
+	height: 60px;
+	background: #007BFF;
+	border-radius: 50%;
+	border: none;
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	z-index: 1039;
+}
+
+.legend-button2 i {
+	font-size: 28px;
+	color: #fff;
+}
+
+.fade-Out {
+	visibility: hidden;
+	opacity: 0;
+	bottom: 10%;
+	transition: visibility 0s ease-in 300ms, opacity 300ms;
+}
+
+.containerFL {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1038;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: .3;
+}
+
+.maps h1 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 72px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.maps {
+	padding-top: 32px;
+}
+
+.background {
+	background-image: url('../../images/iconmaps/Background\ Maps.png');
+	background-position: center;
+	/* background-size: cover; */
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}

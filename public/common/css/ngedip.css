@@ -1,0 +1,30 @@
+img#bulb-on {
+    opacity: 0;
+    animation: pulse 2s linear infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    74% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

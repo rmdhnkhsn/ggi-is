@@ -1,0 +1,2 @@
+<a href="{{ route('rekap.download', $row->id)}}" class="btn btn-success btn-sm" title="Download Excel"><i class="far fa-file-excel"></i></a>
+<a href="{{ route('rekap.download_pdf', $row->id)}}" class="btn btn-danger btn-sm" title="Download PDF"><i class="far fa-file-pdf"></i></a>

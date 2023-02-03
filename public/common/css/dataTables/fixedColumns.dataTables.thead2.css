@@ -1,0 +1,22 @@
+table.dataTable thead tr>.dtfc-fixed-left,
+table.dataTable thead tr>.dtfc-fixed-right {
+    z-index: 1;
+    background-color: #f9fcff
+}
+
+table.dataTable tbody tr:nth-of-type(odd)>.dtfc-fixed-left,
+table.dataTable tbody tr:nth-of-type(odd)>.dtfc-fixed-right {
+    z-index: 1;
+    background-color: #fff
+}
+
+table.dataTable tbody tr:nth-of-type(even)>.dtfc-fixed-left,
+table.dataTable tbody tr:nth-of-type(even)>.dtfc-fixed-right {
+    z-index: 1;
+    background-color: #f9fcff
+}
+
+div.dtfc-left-top-blocker,
+div.dtfc-right-top-blocker {
+    background-color: white
+}

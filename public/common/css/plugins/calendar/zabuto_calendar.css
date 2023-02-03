@@ -1,0 +1,317 @@
+/**
+ * Zabuto Calendar
+ */
+
+div.zabuto_calendar {
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar .table th,
+div.zabuto_calendar .table td {
+    padding: 4px 2px;
+    text-align: center;
+}
+
+div.zabuto_calendar .table tr th,
+div.zabuto_calendar .table tr td {
+    background-color: #ffffff;
+}
+
+div.zabuto_calendar .table tr:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* month header */
+div.zabuto_calendar .table tr.calendar-month-header td {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #68717A;
+    border: 0;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header td span {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+div.zabuto_calendar .table tr.calendar-month-header td {
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header td {
+    border-left: 0;
+    border-right: 0;
+}
+
+div.zabuto_calendar .table-bordered tr.calendar-month-header td:first-child {
+    border-left: 1px solid #dddddd;
+}
+
+/* div.zabuto_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+} */
+
+.tdAbsolute {
+    position: absolute;
+    left: 32px;
+    margin-top: -10px;
+}
+
+div.zabuto_calendar div.calendar-month-navigation {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+}
+
+div.zabuto_calendar div.calendar-month-navigation .iconLeft {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    height: 26px;
+    width: 26px;
+    font-size: 23px;
+    color: #ABABAB;
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-shadow: 0px 3px 5px rgba(114, 114, 114, 0.1);
+    border-radius: 8px;
+}
+
+div.zabuto_calendar div.calendar-month-navigation .iconRight {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: -16px;
+    height: 26px;
+    width: 26px;
+    font-size: 23px;
+    color: #ABABAB;
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-shadow: 0px 3px 5px rgba(114, 114, 114, 0.1);
+    border-radius: 8px;
+}
+
+/* day-of-week header */
+div.zabuto_calendar .table tr.calendar-dow-header th {
+    background-color: #fff;
+    font-weight: 600;
+    padding: 8px 0;
+    color: #333;
+}
+
+div.zabuto_calendar tr.calendar-dow-header th,
+div.zabuto_calendar tr.calendar-dow td {
+    width: 14%;
+    color: #666;
+}
+
+div.zabuto_calendar tr.calendar-dow td {
+    text-align: center;
+}
+
+/* day */
+div.zabuto_calendar .table tr td div.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* actions and events */
+/* div.zabuto_calendar .table tr td.event div.day, */
+div.zabuto_calendar ul.legend li.event {
+    background-color: #fff0c3;
+}
+
+div.zabuto_calendar .table tr td.dow-clickable,
+div.zabuto_calendar .table tr td.event-clickable {
+    cursor: pointer;
+}
+
+/* badge */
+div.zabuto_calendar .badge-today,
+div.zabuto_calendar div.legend span.badge-today {
+    background-color: #357ebd;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badge-event,
+div.zabuto_calendar div.legend span.badge-event {
+    background-color: #ff9b08;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeLibur,
+div.zabuto_calendar div.legend span.badgeLibur {
+    background-color: #A5AAAF;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeHadir,
+div.zabuto_calendar div.legend span.badgeHadir {
+    background-color: #00DB76;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeMangkir,
+div.zabuto_calendar div.legend span.badgeMangkir {
+    background-color: #FB5B5B;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeTelat,
+div.zabuto_calendar div.legend span.badgeTelat {
+    background-color: #FFAE00;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeIzin,
+div.zabuto_calendar div.legend span.badgeIzin {
+    background-color: #C16E2C;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeCuti,
+div.zabuto_calendar div.legend span.badgeCuti {
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeSakit,
+div.zabuto_calendar div.legend span.badgeSakit {
+    background-color: #b76aff;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeLembur,
+div.zabuto_calendar div.legend span.badgeLembur {
+    background-color: #09daff;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+div.zabuto_calendar .badgeLibur,
+div.zabuto_calendar .badgeHadir,
+div.zabuto_calendar .badgeMangkir,
+div.zabuto_calendar .badgeTelat,
+div.zabuto_calendar .badgeIzin,
+div.zabuto_calendar .badgeCuti,
+div.zabuto_calendar .badgeSakit,
+div.zabuto_calendar .badgeLembur,
+div.zabuto_calendar .badge-event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95em;
+    margin: -6px 0;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+/* legend */
+div.zabuto_calendar div.legend {
+    margin-top: 5px;
+    text-align: right;
+}
+
+div.zabuto_calendar div.legend span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div.zabuto_calendar div.legend span.legend-text:after,
+div.zabuto_calendar div.legend span.legend-block:after,
+div.zabuto_calendar div.legend span.legend-list:after,
+div.zabuto_calendar div.legend span.legend-spacer:after {
+    content: ' ';
+}
+
+div.zabuto_calendar div.legend span.legend-spacer {
+    padding-left: 25px;
+}
+
+div.zabuto_calendar ul.legend>span {
+    padding-left: 2px;
+}
+
+div.zabuto_calendar ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.zabuto_calendar ul.legend li {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+}
+
+div.zabuto_calendar ul.legend,
+div.zabuto_calendar ul.legend li:first-child {
+    margin-left: 7px;
+}
+
+div.zabuto_calendar ul.legend li:last-child {
+    margin-right: 5px;
+}
+
+div.zabuto_calendar div.legend span.badge {
+    font-size: 0.9em;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+/* responsive */
+@media (max-width: 979px) {
+
+    div.zabuto_calendar .table th,
+    div.zabuto_calendar .table td {
+        padding: 2px 1px;
+    }
+}

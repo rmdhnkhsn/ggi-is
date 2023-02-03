@@ -1,0 +1,191 @@
+.modal-loading {
+  width: 100%;
+  min-height: 95vh;
+  background: #F4F6F9;
+}
+.body-skeleton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+  }
+  .card-skeleton{
+    /*max-width: 350px;*/
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    /* border: 1px solid #d9d9d9; */
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  .card-skeleton .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details span{
+    display: block;
+    background: #d9d9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .details .name-1{
+    height: 22px;
+    width: 100px;
+    margin-top: 20px; 
+  }
+  .details .name-2{
+    height: 15px;
+    width: 200px;
+    margin-top: 10px;
+  }
+  
+  .card-skeleton .Skeleton-table-head{
+    display: flex;
+    margin-top: 50px;
+  }
+  .card-skeleton .Skeleton-table-head .line{
+    height: 25px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .Skeleton-table-head .line-1{
+    margin-right: 8px;
+    width: 10%;
+  }
+  .Skeleton-table-head .line-5{
+    margin-left: 8px;
+    width: 10%;
+  }
+  .Skeleton-table-head .line-2,
+  .Skeleton-table-head .line-3{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 20%;
+  }
+  .Skeleton-table-head .line-4{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 40%;
+  }
+  
+  .card-skeleton .Skeleton-table-body1,
+  .card-skeleton .Skeleton-table-body2,
+  .card-skeleton .Skeleton-table-body3,
+  .card-skeleton .Skeleton-table-body4,
+  .card-skeleton .Skeleton-table-body5,
+  .card-skeleton .Skeleton-table-body6,
+  .card-skeleton .Skeleton-table-body7,
+  .card-skeleton .Skeleton-table-body8{
+    display: flex;
+    margin-top: 30px;
+  }
+  .card-skeleton .Skeleton-table-body1 .line,
+  .card-skeleton .Skeleton-table-body2 .line,
+  .card-skeleton .Skeleton-table-body3 .line,
+  .card-skeleton .Skeleton-table-body4 .line,
+  .card-skeleton .Skeleton-table-body5 .line,
+  .card-skeleton .Skeleton-table-body6 .line,
+  .card-skeleton .Skeleton-table-body7 .line,
+  .card-skeleton .Skeleton-table-body8 .line{
+    height: 16px;
+    background: #d9d9d9;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .Skeleton-table-body1 .line-1,
+  .Skeleton-table-body2 .line-1,
+  .Skeleton-table-body3 .line-1,
+  .Skeleton-table-body4 .line-1,
+  .Skeleton-table-body5 .line-1,
+  .Skeleton-table-body6 .line-1,
+  .Skeleton-table-body7 .line-1,
+  .Skeleton-table-body8 .line-1{
+    margin-right: 8px;
+    width: 10%;
+  }
+  .Skeleton-table-body1 .line-5,
+  .Skeleton-table-body2 .line-5,
+  .Skeleton-table-body3 .line-5,
+  .Skeleton-table-body4 .line-5,
+  .Skeleton-table-body5 .line-5,
+  .Skeleton-table-body6 .line-5,
+  .Skeleton-table-body7 .line-5,
+  .Skeleton-table-body8 .line-5{
+    margin-left: 8px;
+    width: 10%;
+  }
+  .Skeleton-table-body1 .line-2, .Skeleton-table-body1 .line-3,
+  .Skeleton-table-body2 .line-2, .Skeleton-table-body2 .line-3,
+  .Skeleton-table-body3 .line-2, .Skeleton-table-body3 .line-3,
+  .Skeleton-table-body4 .line-2, .Skeleton-table-body4 .line-3,
+  .Skeleton-table-body5 .line-2, .Skeleton-table-body5 .line-3,
+  .Skeleton-table-body6 .line-2, .Skeleton-table-body6 .line-3,
+  .Skeleton-table-body7 .line-2, .Skeleton-table-body7 .line-3,
+  .Skeleton-table-body8 .line-2, .Skeleton-table-body8 .line-3
+  {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 20%;
+  }
+  .Skeleton-table-body1 .line-4,
+  .Skeleton-table-body2 .line-4,
+  .Skeleton-table-body3 .line-4,
+  .Skeleton-table-body4 .line-4,
+  .Skeleton-table-body5 .line-4,
+  .Skeleton-table-body6 .line-4,
+  .Skeleton-table-body7 .line-4,
+  .Skeleton-table-body8 .line-4{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 40%;
+  }
+  
+  .details span::before,
+  .Skeleton-table-head .line::before,
+  .Skeleton-table-body1 .line::before,
+  .Skeleton-table-body2 .line::before,
+  .Skeleton-table-body3 .line::before,
+  .Skeleton-table-body4 .line::before,
+  .Skeleton-table-body5 .line::before,
+  .Skeleton-table-body6 .line::before,
+  .Skeleton-table-body7 .line::before,
+  .Skeleton-table-body8 .line::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0,0,0,0.05) 20%, #d9d9d9 40%, #d9d9d9 100%);
+    background-repeat: no-repeat;
+    background-size: 450px 400px;
+    animation: shimmer 1s linear infinite;
+  }
+  .details span::before{
+    animation-delay: 0.2s;
+  }
+  .Skeleton-table-head .line-2::before,
+  .Skeleton-table-body1 .line-2::before,
+  .Skeleton-table-body2 .line-2::before,
+  .Skeleton-table-body3 .line-2::before,
+  .Skeleton-table-body4 .line-2::before,
+  .Skeleton-table-body5 .line-2::before,
+  .Skeleton-table-body6 .line-2::before,
+  .Skeleton-table-body7 .line-2::before,
+  .Skeleton-table-body8 .line-2::before{
+    animation-delay: 0.22s;
+  }
+  @keyframes shimmer {
+    0%{
+      background-position: -450px 0;
+    }
+    100%{
+      background-position: 450px 0;
+    }
+  }

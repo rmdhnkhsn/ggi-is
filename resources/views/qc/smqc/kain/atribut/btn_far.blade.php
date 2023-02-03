@@ -1,0 +1,1 @@
+<a href="{{route('far.final', $row->id)}}" class="btn btn-info btn-sm" title="Show Report"><i class="far fa-eye"></i></a>

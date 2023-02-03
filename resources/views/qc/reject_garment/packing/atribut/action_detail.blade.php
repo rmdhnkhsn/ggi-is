@@ -1,0 +1,2 @@
+<a href="javascript:void(0)" class="btn btn-warning btn-sm editReport" data-id="{{ $row->id }}" title="Edit" data-toggle="modal" data-target="#modal-editReport"><i class="fas fa-edit"></i></a>
+<a href="{{route('packing_detail.delete', $row->id)}}" class="btn btn-danger btn-sm" title="Hapus"><i class="far fa-trash-alt"></i></a>

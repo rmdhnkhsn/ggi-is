@@ -1,0 +1,102 @@
+div.dataTables_wrapper div.dataTables_filter {
+    /* position: relative;
+    top: 0;
+    right: 38px;
+    margin-top: -5px; */
+    position: absolute;
+    top: -158px;
+    right: 44px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    font-family: poppins;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: left;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0.5em;
+    display: inline-block;
+    height: 35px;
+    border: 1px solid rgba(0, 123, 255, 0.5);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    position: absolute;
+    bottom: 26px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    position: absolute;
+    right: 5px;
+    bottom: -30px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+
+
+#btnSearch {
+    position: absolute;
+    right: 7px;
+    top: -158px;
+    background: linear-gradient(90deg, #0073EE 0%, #429DFF 104.42%);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 42px;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    animation: AnimDelay .75s 1s forwards;
+    -moz-animation: AnimDelay .75s 1s forwards;
+    -webkit-animation: AnimDelay .75s 1s forwards;
+    -o-animation: AnimDelay .75s 1s forwards;
+}
+
+@keyframes AnimDelay {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes AnimDelay {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes AnimDelay {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    div.dataTables_wrapper div.dataTables_filter {
+        position: relative;
+        top: 0;
+        right: 38px;
+    }
+
+    #btnSearch {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+}
